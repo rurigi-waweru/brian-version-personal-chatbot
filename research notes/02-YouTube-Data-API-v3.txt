@@ -1,0 +1,125 @@
+Using the **YouTube Data API v3**, you can access a wide range of **public data** about YouTube content, channels, and interactions. Here's an overview of the **main types of public data** you can access:
+
+---
+
+### ✅ **1. Videos**
+
+You can retrieve information about **public videos**, including:
+
+* Title
+* Description
+* Tags
+* Statistics (view count, like count, comment count)
+* Duration
+* Upload date
+* Video category
+* Thumbnail URLs
+
+📘 Endpoint: `videos.list`
+🔍 Example use: Get details of a video by its ID.
+
+---
+
+### ✅ **2. Channels**
+
+You can get data on **public YouTube channels**, such as:
+
+* Channel title
+* Description
+* Country (if available)
+* Published date
+* Subscriber count (if not hidden)
+* Total view count
+* Video count
+* Thumbnails
+
+📘 Endpoint: `channels.list`
+🔍 Example use: Retrieve a channel's statistics and branding info.
+
+---
+
+### ✅ **3. Playlists**
+
+You can explore:
+
+* Public playlists created by a user
+* Playlist titles, descriptions, and number of items
+
+📘 Endpoints: `playlists.list`, `playlistItems.list`
+🔍 Example use: List videos in a playlist.
+
+---
+
+### ✅ **4. Search**
+
+You can search for:
+
+* Videos
+* Channels
+* Playlists
+
+Based on:
+
+* Keywords
+* Location
+* Upload date
+* Popularity
+
+📘 Endpoint: `search.list`
+🔍 Example use: Search for videos with a keyword like “python tutorial”.
+
+---
+
+### ✅ **5. Comments**
+
+You can read **public comments** on videos:
+
+* Top-level comments
+* Replies
+* Like counts
+* Author info
+
+📘 Endpoint: `commentThreads.list`
+🔍 Example use: Analyze sentiment or frequent keywords in video comments.
+
+---
+
+### ✅ **6. Video Categories**
+
+Get a list of all available video categories (e.g., Music, Gaming, Education).
+
+📘 Endpoint: `videoCategories.list`
+🔍 Example use: Map videos to their categories.
+
+---
+
+### ✅ **7. Subscriptions (limited)**
+
+If the channel's subscriptions are public, you can list what channels they're subscribed to.
+
+📘 Endpoint: `subscriptions.list`
+🔍 Example use: See who a channel is following (if public).
+
+---
+
+### ✅ **8. Live Broadcasts**
+
+You can access data about:
+
+* Live streams (currently streaming or scheduled)
+* Viewers count (if available)
+
+📘 Endpoint: `liveBroadcasts.list`
+🔍 Example use: Monitor upcoming livestreams on a channel.
+
+---
+
+## ⚠️ Limitations
+
+* You **cannot access private videos, playlists, or subscriber details** unless authenticated.
+* Some channels **hide their subscriber counts** or playlists.
+* Quotas: Each request costs quota units. You get **10,000 units/day by default**.
+
+---
+
+Would you like a sample Python script that pulls public data from a YouTube video or channel using the API?
