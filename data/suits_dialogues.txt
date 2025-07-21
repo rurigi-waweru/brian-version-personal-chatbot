@@ -639,4 +639,5 @@
 <|user|> - Closer to him than Clemenza . <|bot|> - Clooney .
 <|user|> - Clooney . <|bot|> when you first started ?
 <|user|> when you first started ? <|bot|> I 'm not a wuss .
-<|user|> I 'm not a wuss . <|bot|> The End
+"<|user|> I 'm not a wuss . <|bot|> 00:00:0,500 -- > 00:00:2 ,"
+"<|user|> 00:00:0,500 -- > 00:00:2 , <|bot|> The End"
